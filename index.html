@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/fonts.css" />
+  </head>
+  <body
+    class="flex items-center justify-center w-screen h-screen bg-gradient-to-br from-[#0e0d10] to-[#121216]"
+  >
+    <section
+      class="w-full max-w-[69.125rem] h-[600px] bg-[#070709] rounded-3xl flex"
+    >
+      <form class="flex flex-col gap-8 text-gray-400 basis-5/12">
+        <h1
+          class="mt-16 mb-8 font-sans text-5xl font-bold text-center text-white"
+        >
+          Faça seu login
+          <span
+            class="inline-block w-4 h-4 bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"
+          ></span>
+        </h1>
+        <div class="flex flex-col w-full px-10">
+          <label class="h-24 group">
+            Email
+            <div
+              class="transition-opacity ease-in opacity-0 group-focus-within:opacity-100 h-14 w-full bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-lg blur-md"
+            ></div>
+            <div
+              class="bg-none focus-within:bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] p-[1px] rounded-lg relative -top-14"
+            >
+              <input
+                type="email"
+                class="h-14 w-full bg-[#111112] rounded-lg p-2 outline-none appearance-none"
+              />
+            </div>
+          </label>
+          <label class="h-24 group">
+            Senha
+            <div
+              class="transition-opacity ease-in opacity-0 group-focus-within:opacity-100 h-14 w-full bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-lg blur-md"
+            ></div>
+            <div
+              class="bg-none focus-within:bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] p-[1px] rounded-lg relative -top-14"
+            >
+              <input
+                type="password"
+                class="h-14 w-full bg-[#111112] rounded-lg p-2 outline-none appearance-none"
+              />
+            </div>
+          </label>
+        </div>
+        <div class="px-10">
+          <p
+            class="w-full mb-10 -mt-5 text-sm text-right underline cursor-pointer"
+          >
+            Esqueci minha senha
+          </p>
+          <button
+            type="submit"
+            class="w-full h-12 bg-gradient-to-tr from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-lg text-white font-sans font-bold text-2xl mx-auto"
+          >
+            Entrar
+          </button>
+        </div>
+        <a class="text-sm text-center underline cursor-pointer"
+          >Ainda não tenho uma conta</a
+        >
+      </form>
+      <section
+        class="lg:w-7/12 bg-[url('/img/bg.jpg')] bg-cover rounded-r-3xl shadow-[inset_139px_4px_118px_76px_#070709] opacity-70"
+      ></section>
+    </section>
+  </body>
+</html>
